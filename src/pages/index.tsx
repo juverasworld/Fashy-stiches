@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Header from '@/components/Header'
 import Image from 'next/image'
-import { GiHamburgerMenu } from 'react-icons/Gi'
+
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { Icon } from '@/components/utils'
