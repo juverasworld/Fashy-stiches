@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { BsGlobe } from 'react-icons/bs';
 import Head from 'next/head';
+import Link from 'next/link';
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -37,16 +38,16 @@ const Header = () => {
                         <p className='font-bold font-["Clash Display] text-yellow-600 text-[20px]'>Fashy Stiches</p>
                         <p>     <div className=" border-2 w-16 h-10 globe_size wrapper_selector gtranslate_wrapper"><BsGlobe/></div></p>
                     </div> */}
-                    <div className={`nav__menu ${menuOpen ? 'nav__menu--open' : ''}`}>
+                    <div className={`nav__menu bg-yellow-600 ${menuOpen ? 'nav__menu--open' : ''}`}>
                         <ul>
                             <li>
-                                <a href="/">Home</a>
+                                <Link href="/">Home</Link>
                             </li>
                             <li>
-                                <a href="/about">About Us</a>
+                                <Link href="/about">About Us</Link>
                             </li>
                             <li>
-                                <a href="/contact">Contact Us</a>
+                                <Link href="/contact">Contact Us</Link>
                             </li>
                         </ul>
                     </div>

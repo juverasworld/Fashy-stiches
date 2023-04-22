@@ -9,7 +9,8 @@ import Link from 'next/link'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import Row from '@/components/ROws'
-const inter = Inter({ subsets: ['latin'] })
+import Footer from '@/components/Footin'
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -39,33 +40,32 @@ export default function Home() {
 
       <main>
         <section>
-          <div className='fixed w-[100%] mb-32'>
-          <header className='bg-yellow-600 text-white flex justify-end   '>
+          <div className='fixed w-[100%] mb-32 z-20'>
+          <header className='bg-yellow-600 text-white flex justify-between  '>
+            <p >
+              <Image className='' src="/img/Logo.jpg" alt="fj" width="100"height="50"/>
+            </p>
+<div className="md:flex justify-end hidden">
             <p className='px-4'>Need help?</p>
             <p className='px-4'>support@fashy.ng</p>
             {/* <div className="gtranslate_wrapper text-black w-[10px] h-1" style={{ paddingLeft: "20px" }}></div> */}
-            <p className='px-4'>Contact</p>
+            <p className='px-4'>Contact</p> </div>
           </header>
           <Header />
           </div>
           <main className='w2 w-[100%] h-[50%]'>
             <div>
-
-
               <div >
-               
-
-
               </div>
-              <div className='pt-[200px]'>
-              <div className='text-yellow-600 w-[40%] glass px-5 py-5 relative mb-[20px] text-[18px] z-10'>
+              <div className='pt-[200px] text-center zp '>
+              <div className='text-yellow-600 md:mx-16 mx-5 glass px-5 py-10 relative mb-[20px] text-[18px] z-10'>
                 <h1 className='text-[3rem] font-bold font-["Clash Display"]'>Custom Suits</h1>
                 <p className='text-[2rem] py-3'>from 199€</p>
                 <p className=' font-lato text-[1rem] py-1'>★ ★ ★ ★ ★ 285 Reviews</p>
                 <p className=' font-["Clash Display"] text-[1rem] pb-3'>100% Made to Measure Suits</p>
                 <p>Are you looking for a custom suit that will make you look stunning and express your personal style to the fullest? Hockerty has the answer! Our suits are not only high-quality but they are also hand tailored to your measurements. Choose from more than 150 fabrics and various details and design your own outfit. We guarantee the perfect fit of your tailor-made Hockerty suit.</p>
 
-                <button className='rounded-3xl text-yellow-600 border-2 px-5 py-2'>Contact us</button>
+                <button className='rounded-3xl text-yellow-600 border-2 px-5 py-2 my-5'>Contact us</button>
               </div>
               <p>
 
@@ -75,7 +75,7 @@ export default function Home() {
             </div>
           </main>
           <Row/>
-          
+          <Footer/>
         </section>
       </main>
 
