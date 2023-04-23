@@ -1,15 +1,14 @@
 import Head from 'next/head'
-import Header from '@/components/Header'
 import Image from 'next/image'
-
+import Header from '../components/Header'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import { Icon } from '@/components/utils'
+
 import Link from 'next/link'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import Row from '@/components/ROws'
-import Footer from '@/components/Footin'
+import Row from '../components/ROws'
+import Footer from '../components/Footin'
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -51,7 +50,7 @@ export default function Home() {
             {/* <div className="gtranslate_wrapper text-black w-[10px] h-1" style={{ paddingLeft: "20px" }}></div> */}
             <p className='px-4'>Contact</p> </div>
           </header>
-          <Header />
+          <Header/>
           </div>
           <main className='w2 w-[100%] h-[50%]'>
             <div>
